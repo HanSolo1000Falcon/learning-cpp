@@ -1,6 +1,6 @@
-#include <iostream>
+#include "rps/rps_manager.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    rps_manager::init_game_and_start_game_loop();
     return 0;
 }

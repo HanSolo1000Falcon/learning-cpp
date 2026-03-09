@@ -7,4 +7,9 @@ add_executable(learning_projects src/main.cpp
         src/rng/rng.cpp
         src/rng/rng.h
         src/json/json.cpp
-        src/json/json.h)
+        src/json/json.h
+        src/rps/rps_manager.cpp
+        src/rps/rps_manager.h
+        src/rps/rps_agent.cpp
+        src/rps/rps_agent.h
+)
