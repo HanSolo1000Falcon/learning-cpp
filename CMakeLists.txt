@@ -12,4 +12,5 @@ add_executable(learning_projects src/main.cpp
         src/rps/rps_manager.h
         src/rps/rps_agent.cpp
         src/rps/rps_agent.h
+        src/ttt/tictactoe_board.hpp
 )
