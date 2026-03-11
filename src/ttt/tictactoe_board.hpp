@@ -1,7 +1,6 @@
 #ifndef LEARNING_PROJECTS_TICTACTOE_BOARD_HPP
 #define LEARNING_PROJECTS_TICTACTOE_BOARD_HPP
 #include <algorithm>
-#include <cstdlib>
 #include <iostream>
 #include <ostream>
 #include <vector>
@@ -37,7 +36,6 @@ public:
     }
 
     void draw_board() const {
-        std::cout << "\033[2J\033[H";
         for (auto y = 0; y < board_size; ++y) {
             for (auto x = 0; x < board_size; ++x) {
                 const tictactoe_coordinate coordinate = {x, y};

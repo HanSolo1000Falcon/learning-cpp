@@ -13,4 +13,6 @@ add_executable(learning_projects src/main.cpp
         src/rps/rps_agent.cpp
         src/rps/rps_agent.h
         src/ttt/tictactoe_board.hpp
+        src/ttt/tictactoe_manager.hpp
+        src/linked-list/list.hpp
 )
