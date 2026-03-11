@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 4.1)
 project(learning_projects)
 
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 26)
 
 add_executable(learning_projects src/main.cpp
         src/rng/rng.cpp
@@ -15,4 +15,6 @@ add_executable(learning_projects src/main.cpp
         src/ttt/tictactoe_board.hpp
         src/ttt/tictactoe_manager.hpp
         src/linked-list/list.hpp
+        src/bitmap-visualizer/bv_manager.hpp
+        src/bitmap-visualizer/bitmap.hpp
 )
