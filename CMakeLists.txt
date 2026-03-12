@@ -17,4 +17,5 @@ add_executable(learning_projects src/main.cpp
         src/linked-list/list.hpp
         src/bitmap-visualizer/bv_manager.hpp
         src/bitmap-visualizer/bitmap.hpp
+        src/linked-list/l_list.hpp
 )
