@@ -10,15 +10,12 @@
 template<typename T>
 class l_list {
     struct node {
-        T *data;
+        T *data = nullptr;
         node *next;
         node *previous;
 
         ~node() {
-            if (data != nullptr) {
-                // Freeing here instead of deleting because `malloc` is used when adding
-                free(data);
-            }
+                delete data;
         }
     };
 
@@ -59,7 +56,6 @@ public:
 
     l_list() {
         sentry = new node();
-        sentry->data = nullptr;
         sentry->next = sentry;
         sentry->previous = sentry;
     }
@@ -74,7 +70,7 @@ public:
     }
 
     void add(T data) {
-        T *data_pointer = static_cast<T *>(malloc(sizeof(T)));
+        T *data_pointer = new T();
         *data_pointer = data;
 
         const auto new_node = new node();
